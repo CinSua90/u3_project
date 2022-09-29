@@ -2,7 +2,7 @@
   text-align: center;
 } */
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -11,10 +11,11 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-/* .App-header {
-  background-color: #282c34;
+ /* .App-header {
+  
+  background-image: ("https://www.voicemag.uk/filesystem/user_cropped/article/07136a65c5c7cab248790da7fd9da564277fdabb.png");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,8 +23,8 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-} */
-
+}  */
+/* 
 .App-link {
   color: #61dafb;
 }
@@ -35,6 +36,6 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 

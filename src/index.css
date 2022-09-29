@@ -1,5 +1,8 @@
+
+
 body {
-background: white;
+  background-image: url("https://wallpapercave.com/wp/wp5801997.jpg");
+
 }
 
 body {
@@ -23,7 +26,7 @@ button {
   border: none;
   outline: none;
   font-size: 1.2em;
-  background-color: rgb(0, 43, 151);
+  background-color: rgb(235, 167, 231);
   color: white;
   border-radius: 0.25em;
   box-shadow: 0 0 0.25em black;
@@ -31,32 +34,38 @@ button {
 
 .catFact-container {
   display: flex;
-  background: #ffe2e8;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
   padding: 6em 4em;
   width: 26em;
   height: 22em;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto;
+  text-align: center;
   text-shadow: 0 0 0.5em rgba(0, 151, 88, 0.253);
 }
-
+/* 
 .Chaos-container {
   display: flex;
-  background: #ffe2e8;
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
   padding: 6em 4em;
   width: 26em;
   height: 22em;
-  flex-direction: column;
+  margin-right: auto;
+  float: right;
   justify-content: center;
   text-shadow: 0 0 0.5em rgba(0, 151, 88, 0.253);
+  
 }
 
 .catPic-container {
   display: flex;
-  background: #ffe2e8;
+
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
   width: 26em;
-  height: 22em;
-  flex-direction: column;
+  margin-left: auto;
+  float: left;
   justify-content: center;
   text-shadow: 0 0 0.5em rgba(0, 151, 88, 0.253);
-}
+} */
