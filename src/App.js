@@ -4,6 +4,7 @@ import React, { useState } from 'react'
 import CatFact from './components/CatFacts'
 import CatPic from './components/CatPics'
 import Chaos from './components/ChaosMode'
+import chaos from './chaos.js'
 
 const App = () => {
   const [displayFact, setDisplayFact] = useState(false)
@@ -32,7 +33,6 @@ const App = () => {
       setDisplayPic(false)
     }
   }
-
   return (
     <div className="App">
       <main>
@@ -45,27 +45,29 @@ const App = () => {
           {/* This is some general text to welcome & state the purpose of this website */}
           <p>
             Welcome to Doja Cat's Kitty Rescue agency! We have recently launched
-            & are so excited for you to take a look! Please check out some cat
-            facts & hopefully even adopt a kitty of your own today!
+            this year & we are so excited to have you take a look around! Please
+            feel free to check out some fun cat facts & hopefully even adopt a
+            kitty of your own before you leave!
           </p>
           <br />
-          {/* This will display Cat Facts */}
-          {displayFact === false ? (
-            <h2>LOREM IPSUM FILL THIS LATER NEED CREATIVE INSPO.</h2>
-          ) : (
-            <CatFact displayFact={displayFact} />
-          )}
+          {/* This will display Cat Facts from CatFacts.jsx*/}
+          {displayFact === false ? '' : <CatFact displayFact={displayFact} />}
           <br />
 
-          {/* This will display Cat Pics */}
-          {<CatPic displayPic={displayPic} />}
+          {/* This will display Cat Pics from CatPics.js */}
+          {displayPic === false ? ' ' : <CatPic displayPic={displayPic} />}
 
-          {/* Reusing Chaos to display available cats for adoption. */}
-          {displayChaos === false ? (
-            <h2>Soon there will be text here!</h2>
-          ) : (
-            <Chaos displayChaos={displayChaos} />
-          )}
+          {/* Reusing Chaos to display available cats for adoption from ChaosMode.jsx */}
+          {displayChaos === false
+            ? ' '
+            : chaos.map((chaos) => (
+                <Chaos
+                  photo={chaos.photo}
+                  name={chaos.name}
+                  breed={chaos.breed}
+                  adoption={chaos.adoption}
+                />
+              ))}
 
           {/* This buttons toggles through Cat Facts */}
           <button onClick={toggleFact} className="fact-button">
@@ -82,14 +84,14 @@ const App = () => {
           <br />
 
           {/* This button toggles though Cats for adoption */}
-          <h2> ADDING TEXT FOR CHAOS SPACE</h2>
+
           <button onClick={toggleChaos}>
             {displayChaos === false ? 'Cats for Adoption' : 'Ok Take Me Back'}
           </button>
 
-          {/* Need to import chaos adoption list to this file* --IN PROGRESS/ }
+          {/* Need to import chaos adoption list to this file* -- DONE }
 
-          {/* Map adoption list to Chaos instead of current quotes. Map written below, insert when current code works & test -- IN PROGRESS*/}
+      {/* Map adoption list to Chaos instead of current quotes. Map written below, insert when current code works & test -- IN PROGRESS*/}
 
           {/* Place buttons under text/images -- IN PROGRESS*/}
 
@@ -101,5 +103,4 @@ const App = () => {
     </div>
   )
 }
-
 export default App

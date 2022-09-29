@@ -9,7 +9,9 @@ const CatFact = ({displayFact}) => {
   const getCatFact = async () => {
 try {
   const res = await axios.get('https://meowfacts.herokuapp.com/')
-  setFact(res.data.fact)
+
+  console.log(res)
+  setFact(res.data.data[0])
 } catch(err){
   console.log(err)
 }

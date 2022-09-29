@@ -4,12 +4,13 @@ import axios from 'axios'
 
 const CatPic = ({displayPic}) => {
   
-const [setPic] = useState('')
+const [pic, setPic] = useState('')
 
   const getCatPic = async () => {
 try {
   const res = await axios.get('https://api.thecatapi.com/v1/images/search')
-  setPic(res.data.pic)
+  console.log(res.data)
+  setPic(res.data[0].url)
 } catch(err){
   console.log(err)
 }
@@ -19,6 +20,12 @@ try {
 
     getCatPic();
   }, [displayPic])
+
+  return (
+    <img src={pic} alt="Cat Pic" />
+  )
+
+
 
 }
 

@@ -4,7 +4,7 @@ const chaos = [
     breed: 'Maine Coon',
     photo:
       'https://cdn.shopify.com/s/files/1/0087/3798/0475/articles/sergei-wing-RWElb9j7nlc-unsplash_2400x.jpg?v=1655476120',
-    adpotion: 'Yes'
+    adoption: 'Yes'
   },
   {
     name: 'Kim Seokjin',
