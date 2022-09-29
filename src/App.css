@@ -1,6 +1,6 @@
 /* .App {
   text-align: center;
-} */
+} 
 
 /* .App-logo {
   height: 40vmin;
@@ -12,18 +12,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 } */
-
- /* .App-header {
+/* 
+ /.App-header {
   
-  background-image: ("https://www.voicemag.uk/filesystem/user_cropped/article/07136a65c5c7cab248790da7fd9da564277fdabb.png");
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}  */
+  background: white;
+  width: 30em;
+  height: 36em;
+}   */
 /* 
 .App-link {
   color: #61dafb;

@@ -35,7 +35,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">APP HEADER TEST</header>
+      <header className="App-header">Doja Cat's Kitty Rescue</header>
       <main>
         <div className="catFact-container">
           {displayFact === false ? (
