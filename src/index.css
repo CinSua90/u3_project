@@ -30,19 +30,42 @@ button {
   color: white;
   border-radius: 0.25em;
   box-shadow: 0 0 0.25em black;
+  width: 300px;
+  height: 60px;
 }
 
 .catFact-container {
   display: flex;
   background: rgb(63,94,251);
-background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
   padding: 6em 4em;
-  width: 26em;
-  height: 22em;
+  width: 1000px;
+  height: 600px;
   margin: auto;
   text-align: center;
   text-shadow: 0 0 0.5em rgba(0, 151, 88, 0.253);
+  border-radius: 30px;
 }
+
+.App-header{
+  font-size: 100px;
+  border-radius: 30px;
+  background: rgb(235, 167, 231);
+  background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(255,226,232,0.5116421568627452) 0%);
+  text-align: center;
+  font-family: Chalkduster, fantasy;
+  color: white;
+}
+
+.photo{
+  width:100px;
+  height:100px;
+
+}
+
+
+
+
 /* 
 .Chaos-container {
   display: flex;

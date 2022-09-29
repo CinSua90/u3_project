@@ -35,34 +35,76 @@ const App = () => {
 
   return (
     <div className="App">
-      <header className="App-header">Doja Cat's Kitty Rescue</header>
       <main>
+        <br />
+        <header className="App-header">Doja Cat's Kitty Rescue</header>
+        <br />
+        <br />
+        <br />
         <div className="catFact-container">
+          {/* This is some general text to welcome & state the purpose of this website */}
+          <p>
+            Welcome to Doja Cat's Kitty Rescue agency! We have recently launched
+            & are so excited for you to take a look! Please check out some cat
+            facts & hopefully even adopt a kitty of your own today!
+          </p>
+          <br />
+          {/* This will display Cat Facts */}
           {displayFact === false ? (
             <h2>LOREM IPSUM FILL THIS LATER NEED CREATIVE INSPO.</h2>
           ) : (
             <CatFact displayFact={displayFact} />
           )}
-          <button onClick={toggleFact}>
-            {displayFact === false
-              ? 'Cat Facts!'
-              : 'Click here if you dont like cats'}
-          </button>
+          <br />
+          {/* This will display Cat Pics */}
+          {<CatPic displayPic={displayPic} />}
 
+          {/* Reusing Chaos to display available cats for adoption, currently displays quotes */}
           {displayChaos === false ? (
             <h2>Soon there will be text here!</h2>
           ) : (
             <Chaos displayChaos={displayChaos} />
           )}
-          <h2> ADDING TEXT FOR CHAOS SPACE</h2>
-          <button onClick={toggleChaos}>
-            {displayChaos === false ? 'Choose Violence' : 'Ok Take Me Back'}
-          </button>
 
-          {<CatPic displayPic={displayPic} />}
+          {/* This buttons toggles through Cat Facts */}
+          <button onClick={toggleFact}>
+            {displayFact === false
+              ? 'Cat Facts!'
+              : 'Click here if you dont like cats'}
+          </button>
+          <br />
+          <br />
+          {/* This button toggles through Cat Pics */}
           <button onClick={togglePic}>
             {displayPic === false ? 'More Cute Kitties Pls' : 'No More Pls'}
           </button>
+          <br />
+
+          {/* This button toggles though Cats for adoption */}
+          <h2> ADDING TEXT FOR CHAOS SPACE</h2>
+          <button onClick={toggleChaos}>
+            {displayChaos === false ? 'Cats for Adoption' : 'Ok Take Me Back'}
+          </button>
+
+          {/* Need to import chaos adoption list to this file*/}
+
+          {/* Map adoption list to Chaos instead of current quotes. Map written below, insert when current code works & test */}
+
+          {/* {chaos.map((chaos) => (
+        <Chaos
+          image={chaos.photo}
+          name={chaos.name}
+          breed={chaos.breed}
+          adoption={chaos.adoption}
+        
+        />
+      ))} */}
+
+          {/* Place buttons under text/images -- IN PROGRESS*/}
+
+          {/* Make div larger & adjust to remain static, not dynamic. In other words make sure images stay at a certain size -- FIXED I THINK */}
+
+          {/* Need to adjust header to be more visible -- FIXED*/}
         </div>
       </main>
     </div>

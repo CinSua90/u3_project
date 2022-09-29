@@ -27,3 +27,18 @@ const Chaos = ({ displayChaos }) => {
 
 
 export default Chaos
+
+
+
+// const Chaos2 = ({ name, breed, photo, adoption}) =>
+// {
+// <div className="App">
+//   <p>
+// <img src={photo} />
+// Name: {name}
+// Breed: {breed} 
+// Ready for Adoption: {adoption}
+// </p>
+// </div>
+
+// }
