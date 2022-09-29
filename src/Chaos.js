@@ -1,4 +1,4 @@
-const Chaos = [
+const chaos = [
   {
     name: 'Kim Namjoon',
     breed: 'Maine Coon',
@@ -53,4 +53,4 @@ const Chaos = [
   }
 ]
 
-export default Chaos
+export default chaos

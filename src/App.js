@@ -56,10 +56,11 @@ const App = () => {
             <CatFact displayFact={displayFact} />
           )}
           <br />
+
           {/* This will display Cat Pics */}
           {<CatPic displayPic={displayPic} />}
 
-          {/* Reusing Chaos to display available cats for adoption, currently displays quotes */}
+          {/* Reusing Chaos to display available cats for adoption. */}
           {displayChaos === false ? (
             <h2>Soon there will be text here!</h2>
           ) : (
@@ -67,7 +68,7 @@ const App = () => {
           )}
 
           {/* This buttons toggles through Cat Facts */}
-          <button onClick={toggleFact}>
+          <button onClick={toggleFact} className="fact-button">
             {displayFact === false
               ? 'Cat Facts!'
               : 'Click here if you dont like cats'}
@@ -86,19 +87,9 @@ const App = () => {
             {displayChaos === false ? 'Cats for Adoption' : 'Ok Take Me Back'}
           </button>
 
-          {/* Need to import chaos adoption list to this file*/}
+          {/* Need to import chaos adoption list to this file* --IN PROGRESS/ }
 
-          {/* Map adoption list to Chaos instead of current quotes. Map written below, insert when current code works & test */}
-
-          {/* {chaos.map((chaos) => (
-        <Chaos
-          image={chaos.photo}
-          name={chaos.name}
-          breed={chaos.breed}
-          adoption={chaos.adoption}
-        
-        />
-      ))} */}
+          {/* Map adoption list to Chaos instead of current quotes. Map written below, insert when current code works & test -- IN PROGRESS*/}
 
           {/* Place buttons under text/images -- IN PROGRESS*/}
 
