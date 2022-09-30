@@ -56,7 +56,7 @@ const App = () => {
                 ? 'Cat Facts!'
                 : 'Click here if you dont like cats'}
             </button>
-            <br />
+
             <br />
             {/* This button toggles through Cat Pics */}
             <button onClick={togglePic}>
