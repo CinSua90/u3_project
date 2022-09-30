@@ -50,6 +50,26 @@ const App = () => {
             kitty of your own before you leave!
           </p>
           <br />
+          <div id="buttons">
+            <button onClick={toggleFact} className="fact-button">
+              {displayFact === false
+                ? 'Cat Facts!'
+                : 'Click here if you dont like cats'}
+            </button>
+            <br />
+            <br />
+            {/* This button toggles through Cat Pics */}
+            <button onClick={togglePic}>
+              {displayPic === false ? 'More Cute Kitties Pls' : 'No More Pls'}
+            </button>
+            <br />
+
+            {/* This button toggles though Cats for adoption */}
+
+            <button onClick={toggleChaos}>
+              {displayChaos === false ? 'Cats for Adoption' : 'Ok Take Me Back'}
+            </button>
+          </div>
           {/* This will display Cat Facts from CatFacts.jsx*/}
           {displayFact === false ? '' : <CatFact displayFact={displayFact} />}
           <br />
@@ -58,36 +78,19 @@ const App = () => {
           {displayPic === false ? ' ' : <CatPic displayPic={displayPic} />}
 
           {/* Reusing Chaos to display available cats for adoption from ChaosMode.jsx */}
-          {displayChaos === false
-            ? ' '
-            : chaos.map((chaos) => (
-                <Chaos
-                  photo={chaos.photo}
-                  name={chaos.name}
-                  breed={chaos.breed}
-                  adoption={chaos.adoption}
-                />
-              ))}
-
+          <div className="adoptCat">
+            {displayChaos === false
+              ? ' '
+              : chaos.map((chaos) => (
+                  <Chaos
+                    photo={chaos.photo}
+                    name={chaos.name}
+                    breed={chaos.breed}
+                    adoption={chaos.adoption}
+                  />
+                ))}
+          </div>
           {/* This buttons toggles through Cat Facts */}
-          <button onClick={toggleFact} className="fact-button">
-            {displayFact === false
-              ? 'Cat Facts!'
-              : 'Click here if you dont like cats'}
-          </button>
-          <br />
-          <br />
-          {/* This button toggles through Cat Pics */}
-          <button onClick={togglePic}>
-            {displayPic === false ? 'More Cute Kitties Pls' : 'No More Pls'}
-          </button>
-          <br />
-
-          {/* This button toggles though Cats for adoption */}
-
-          <button onClick={toggleChaos}>
-            {displayChaos === false ? 'Cats for Adoption' : 'Ok Take Me Back'}
-          </button>
 
           {/* Need to import chaos adoption list to this file* -- DONE }
 

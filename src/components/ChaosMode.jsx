@@ -7,9 +7,9 @@ const Chaos = ({ name, breed, photo, adoption}) =>
 <div className="App">
   <p>
 <img src={photo} />
-Name: {name}
-Breed: {breed} 
-Ready for Adoption: {adoption}
+<b>Name:</b> {name}<br />
+<b>Breed:</b> {breed} <br />
+<b>Ready for Adoption:</b> {adoption} <br />
 </p>
 {/* return (
     <h2 style={{fontStyle: 'italic'}}>{chaos !== '' && chaos}</h2>
